@@ -1,0 +1,19 @@
+h1 {
+    font-size: 120%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #677570;
+}
+
+label{
+    color: #797a7a;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+p{
+    line-height: 0.7em;
+}
+
+ #leftimg {
+     float:left;
+     margin: 0px 15px 10px 10px;
+ }
