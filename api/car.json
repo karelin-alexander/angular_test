@@ -1,0 +1,29 @@
+[{
+    "name": "Audi",
+    "model": "S8",
+    "year": "2015",
+    "cost": "$107630",
+    "mileage": "1",
+    "amount": "4000",
+    "color": "grey",
+    "type": "sedan",
+    "fuel": "petrol",
+    "transmission": "auto",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDonqy0adgauXQLhiNqEXhghPL8MnUdZdcZ9X7jJ88Ia75xoBg",
+    "phoneNumbers": "375(29)123-45-67"
+    },
+  {
+    "name": "Nissan",
+    "model": "Quashqai SE",
+    "year": "2012",
+    "cost": "$9950",
+    "mileage": "65800",
+    "amount": "2000",
+    "color": "black",
+    "type": "terrain",
+    "fuel": "petrol",
+    "transmission": "auto",
+    "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw3eB7hMBioGT9_JKgmp9FUk8uj4ZuYH5W1tJCoelUiZgn-1-k3A",
+    "phoneNumbers": "375(29)784-55-44"
+  }
+]
