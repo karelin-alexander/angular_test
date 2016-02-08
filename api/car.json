@@ -1,0 +1,19 @@
+{ 
+   "name": "Audi",
+   "model": "S8",
+   "info": {
+        "year": "2015",
+        "mileage": "1",
+        "amount": "4000",
+        "color": "grey",
+        "type": "sedan",
+        "fuel": "petrol",
+        "transmission": "auto"
+   },
+   "image": {
+        "img": "img/1.png",
+	"img": "img/2.png",
+	"img": "img/3.png"
+   },
+   "phoneNumbers": "375 29 123 45 67"
+}
