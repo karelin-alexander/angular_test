@@ -1,4 +1,5 @@
 (function(){
     'use strict';
-    angular.module('mainApp', ['carApp']);
+
+    angular.module('base.app', ['cars.app', 'buying.app', 'ngRoute']);
 })();
