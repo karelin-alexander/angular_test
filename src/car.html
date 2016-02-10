@@ -11,8 +11,7 @@
         <p class="out_text">тип топлива: {{ car.fuel }}</p>
         <p class="out_text">коробка передач: {{ car.transmission }}</p>
         <p class="out_text">контактный номер: {{ car.phoneNumbers}}</p>
-        <strong><p class="cost">Цена: {{ car.cost }}</p></strong>
+        <strong><p class="cost">Цена: {{ car.cost | currency:"$":0}}</p></strong>
         <hr>
     </div>
-
 </div>
