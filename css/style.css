@@ -5,17 +5,12 @@
      color: #305099;
  }
 
-label{
-    color: #797a7a;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-
 .out_text{
     line-height: 0.6em;
 }
 
-input{
-    margin: 12px;
+.form-control{
+    margin: 10px;
 }
 
 .navbar-brand{
@@ -30,6 +25,8 @@ input{
     color: #e94c54;
 }
 
-.header_h1{
-    background-color: #D2DEEE;
+.item_search{
+    margin:10px;
+    font-size: 14px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
