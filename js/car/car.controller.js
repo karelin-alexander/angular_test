@@ -1,10 +1,9 @@
 (function(){
     'use strict';
-    angular.module('CarController', [])
-        .controller('carCtrl', function($scope,car){
-            var promiseObj = car.getData();
-                promiseObj.then(function(value){
-                 $scope.carData = value;
-            });
+
+    angular.module('cars.app').controller('carsCtrl', function($scope,Cars){
+        Cars.getData().then(function(value){
+            $scope.carsData = value;
         });
+    });
 })();
