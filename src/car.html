@@ -1,18 +1,17 @@
-
 <div ng-controller="carsCtrl as cars">
     <div ng-repeat="car in carsData">
         <img src="{{ car.img }}" align="left" class="img-thumbnail" width="320" height="320" hspace="10px">
-        <h1>{{ car.name + " " + car.model }} </h1>
-        <strong><p>Цена: {{ car.cost }}</p></strong>
+        <h1 class="name_model">{{ car.name + " " + car.model }} </h1>
         <strong><p>Характеристики</p></strong>
-        <p>год: {{ car.year }}</p>
-        <p>пробег: {{ car.mileage }}</p>
-        <p>объём: {{ car.amount }}</p>
-        <p>цвет: {{ car.color }}</p>
-        <p>тип кузова: {{ car.type }}</p>
-        <p>тип топлива: {{ car.fuel }}</p>
-        <p>коробка передач: {{ car.transmission }}</p>
-        <p>контактный номер: {{ car.phoneNumbers}}</p>
+        <p class="out_text">год: {{ car.year }}</p>
+        <p class="out_text">пробег: {{ car.mileage }}</p>
+        <p class="out_text">объём: {{ car.amount }}</p>
+        <p class="out_text">цвет: {{ car.color }}</p>
+        <p class="out_text">тип кузова: {{ car.type }}</p>
+        <p class="out_text">тип топлива: {{ car.fuel }}</p>
+        <p class="out_text">коробка передач: {{ car.transmission }}</p>
+        <p class="out_text">контактный номер: {{ car.phoneNumbers}}</p>
+        <strong><p class="cost">Цена: {{ car.cost }}</p></strong>
         <hr>
     </div>
 
