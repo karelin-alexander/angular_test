@@ -1,16 +1,16 @@
-h1 {
-    margin: 5px;
-    font-size: 120%;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    color: #677570;
-}
+.name_model {
+     margin: 5px;
+     font-size: 120%;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     color: #305099;
+ }
 
 label{
     color: #797a7a;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-p{
+.out_text{
     line-height: 0.6em;
 }
 
@@ -19,5 +19,17 @@ input{
 }
 
 .navbar-brand{
-    background-color: #d7dad4;
+    background-color: #D2DEEE;
+}
+
+.navbar-default{
+    background-color: #f2f2f2;
+}
+
+.cost{
+    color: #e94c54;
+}
+
+.header_h1{
+    background-color: #D2DEEE;
 }
