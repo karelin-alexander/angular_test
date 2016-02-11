@@ -15,26 +15,24 @@ p{
 }
 
 .items_car{
-  line-height: 2.0em;
+  line-height: 1.0em;
   font-size: 14px;
   color: #1F5FBF;
 }
 
 img{
-  max-width: 100%;
-  height: auto;
   margin-right: 10px;
-}
-
-.name_model{
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .item{
-  margin: -10px;
+  margin: -17px;
 }
 
 .cost{
-  padding-top: 80px;
   color: #d43f3a;
+}
+
+.title{
+  margin-left: 20px;
 }
