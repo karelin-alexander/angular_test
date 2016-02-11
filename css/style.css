@@ -28,6 +28,7 @@
 }
 
 .cost{
+    margin-left:10px;
     color: #e94c54;
 }
 
@@ -39,4 +40,8 @@
 
 .btn-default{
     margin-left:40px;
+}
+
+.img-thumbnail{
+    width: 25%;
 }
