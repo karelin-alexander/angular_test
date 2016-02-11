@@ -1,47 +1,40 @@
-.name_model {
-     margin: 5px;
-     font-size: 120%;
-     font-family: Verdana, Arial, Helvetica, sans-serif;
-     color: #305099;
- }
-
-.out_text{
-    line-height: 0.6em;
+h1 {
+  margin: 5px;
+  font-size: 120%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #677570;
 }
 
-.form-control{
-    margin: 10px;
+label{
+  color: #797a7a;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-.form-group{
-    width: 140px;
+p{
+  line-height: 0.6em;
 }
 
-
-.navbar-brand{
-    background-color: #D2DEEE;
+.items_car{
+  line-height: 2.0em;
+  font-size: 14px;
+  color: #1F5FBF;
 }
 
-.navbar-default{
-    background-color: #f2f2f2;
-    height: 52px;
+img{
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.name_model{
+  margin: 10px;
+}
+
+.item{
+  margin: -10px;
 }
 
 .cost{
-    margin-left:10px;
-    color: #e94c54;
-}
-
-.item_search{
-    margin:10px;
-    font-size: 14px;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-
-.btn-default{
-    margin-left:40px;
-}
-
-.img-thumbnail{
-    width: 25%;
+  padding-top: 80px;
+  color: #d43f3a;
 }

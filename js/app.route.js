@@ -6,12 +6,6 @@
             templateUrl: 'src/car.html',
             controller : 'carsCtrl'
         });
-
-        $routeProvider.when('/buying', {
-            templateUrl: 'src/buying.html',
-            controller: 'buyingCtrl'
-        });
-
         $routeProvider.otherwise({redirectTo : '/home'});
     });
 })();

@@ -1,6 +1,6 @@
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/html">
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <meta charset="utf-8">
 
     <script src="libs/angular/angular.min.js"></script>
@@ -8,24 +8,72 @@
     <script src="libs/angular/angular-resource.min.js"></script>
     <script src="libs/jquery/jquery-1.12.0.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/app.route.js"></script>
     <script src="js/car/car.module.js"></script>
     <script src="js/car/car.service.js"></script>
     <script src="js/car/car.controller.js"></script>
-    <script src="js/buying/buying.module.js"></script>
-    <script src="js/buying/buying.controller.js"></script>
-</head>
 
-<body>
-<div ng-app="base.app" class="headBody">
-    <div ng-include="'src/navbar.html'"></div>
-    <div ng-view></div>
-</div>
+  </head>
+  <body>
+  <div ng-app="ionicApp" ng-controller="MainCtrl">
+    <ion-side-menus>
 
-</body>
+      <ion-side-menu-content>
+        <ion-header-bar class="bar-positive">
+          <div class="buttons">
+            <button class="button button-icon icon ion-navicon"
+            ng-click="toogleleft()"></button>
+          </div>
+          <div style="text-align: center;">
+          <h1 class="title">Мои объявления</h1>
+          </div>
+        </ion-header-bar>
+
+        <ion-content>
+          <ion-list ng-controller="carsCtrl as cars" class="headBody">
+            <div class="list">
+              <ion-item ng-repeat="car in carsData">
+              <a class="item" href="#">
+                <img ng-src="{{ car.img }}" class="img-rounded" align="left" hspace="10px">
+                <h2 class="items_car">{{ car.name + " " + car.model }} </h2>
+                <h3 class="year">{{ car.year }}</h3>
+                <h4 class="info">{{'Пробег ' + car.mileage + 'км, '
+                        + 'Объём двигателя ' + car.amount + 'см.куб, '
+                                             + car.fuel + ', '
+                                             + car.type + '.'}}
+                </h4>
+                <h3 class="cost">{{ car.cost }}</h3>
+              </a>
+              </ion-item>
+            </div>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu-content>
+
+      <ion-side-menu side="left">
+        <ion-header-bar class="bar-dark">
+          <h1 class="title">Меню</h1>
+          <button class="button icon ion-gear-a"></button>
+        </ion-header-bar>
+        <ion-content>
+          <ul class="list">
+            <a href="#page" class="item icon ion-ios-list-outline" menu-close> Мои объявления</a>
+            <a href="#" class="item icon ion-cash" menu-close> Продажа</a>
+            <a href="#" class="item icon ion-ios-cart-outline" menu-close> Покупка</a>
+            <a href="#" class="item icon ion-ios-search" menu-close> Поиск</a>
+            <a href="#" class="item icon ion-ios-settings"  menu-close> Настройки</a>
+          </ul>
+        </ion-content>
+      </ion-side-menu>
+
+    </ion-side-menus>
+    </div>
+  </body>
 </html>
