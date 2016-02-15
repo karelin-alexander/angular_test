@@ -1,5 +1,7 @@
-(function(){
-    'use strict';
+var app = angular.module('ionicApp', ['ionic','cars.app','ngRoute'])
 
-    angular.module('base.app', ['cars.app', 'ngRoute']);
-})();
+app.controller('MainCtrl', function($scope, $ionicSideMenuDelegate){
+  $scope.toggleLeft = function() {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
+})

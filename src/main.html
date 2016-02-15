@@ -1,6 +1,6 @@
 <ion-side-menus>
 
-  <ion-side-menu-content>
+  <ion-side-menu-content style="box-shadow: 0 0 30px rgba(0,0,0,0.7);">
     <ion-header-bar class="bar-positive">
       <div class="buttons">
         <button class="button button-icon icon ion-navicon left"
@@ -16,13 +16,14 @@
         <div class="list">
           <ion-item ng-repeat="car in carsData">
             <a class="item" href="#">
-              <img ng-src="{{ car.img }}" class="ssd col-40 img-responsive" align="left" hspace="10px">
+              <img ng-src="{{ car.img }}" class="col-40 img-responsive" align="left" hspace="10px">
               <h2 class="items_car">{{ car.name + " " + car.model }} </h2>
               <h3 class="year">{{ car.year }}</h3>
               <h4 class="info">{{'Пробег ' + car.mileage + 'км, '
                 + 'Объём двигателя ' + car.amount + 'см.куб, '
                 + car.fuel + ', '
-                + car.type + '.'}}
+                + car.type + ', '
+                + car.transmission + '.' }}
               </h4>
               <h3 class="cost">{{ car.cost }}</h3>
             </a>
@@ -32,17 +33,14 @@
     </ion-content>
   </ion-side-menu-content>
 
-  <ion-side-menu side="left">
+  <ion-side-menu  side="left">
     <ion-header-bar class="bar-dark">
-      <a class="button button-clear button-stable" href="#/login">Войти</a>
-      <a class="button icon ion-gear-a" href="#/setting"></a>
+      <a class="button button-clear button-stable" href="#">Войти</a>
+      <a class="button icon ion-gear-a" href="#"></a>
     </ion-header-bar>
-    <ion-content>
-      <ul class="list">
-        <a href="#/login" class="item icon ion-ios-list-outline" style="margin: 0px;" menu-close> Мои объявления</a>
-        <a href="#" class="item icon ion-cash" style="margin: 0px;" menu-close> Продажа</a>
-        <a href="#" class="item icon ion-ios-cart-outline" style="margin: 0px;" menu-close> Покупка</a>
-        <a href="#" class="item icon ion-ios-search" style="margin: 0px;" menu-close> Поиск</a>
+    <ion-content ng-controller="displayElemCtrl">
+      <ul class="list" id="left_menu" ng-repeat="tag in tagsHeader">
+        <a href="{{tag.tagLink}}" class="{{tag.item}}" menu-close> {{tag.tagName}}</a>
       </ul>
     </ion-content>
   </ion-side-menu>

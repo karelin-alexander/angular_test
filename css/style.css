@@ -40,3 +40,9 @@ h1.title{
 .list{
   overflow:  hidden;
 }
+
+#left_menu{
+  margin: 0px;
+  padding: 15px;
+  border: 1px solid #f3f3fa;
+}

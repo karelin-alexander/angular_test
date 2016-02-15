@@ -1,11 +1,11 @@
 ( function (){
 
-    angular.module('base.app').config(function($routeProvider){
+    angular.module('ionicApp').config(function($routeProvider){
 
-        $routeProvider.when('/home', {
+        $routeProvider.when('/obyavlenie', {
             templateUrl: 'src/car.html',
             controller : 'carsCtrl'
         });
-        $routeProvider.otherwise({redirectTo : '/home'});
+        $routeProvider.otherwise({redirectTo : '/obyavlenie'});
     });
 })();
