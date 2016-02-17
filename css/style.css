@@ -33,16 +33,21 @@ img{
   color: #d43f3a;
 }
 
-h1.title{
+.title{
   text-align: center;
 }
 
 .list{
   overflow:  hidden;
+  padding: 2px;
 }
 
 #left_menu{
   margin: 0px;
   padding: 15px;
   border: 1px solid #f3f3fa;
+}
+
+.menu_shadow{
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
 }

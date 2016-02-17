@@ -1,14 +1,12 @@
 <ion-side-menus>
 
-  <ion-side-menu-content style="box-shadow: 0 0 30px rgba(0,0,0,0.7);">
+  <ion-side-menu-content class="menu_shadow">
     <ion-header-bar class="bar-positive">
       <div class="buttons">
         <button class="button button-icon icon ion-navicon left"
                 ng-click="toogleleft()"></button>
       </div>
-      <div style="text-align: center;">
-        <h1 class="title">Мои объявления</h1>
-      </div>
+      <h1 class="title">Мои объявления</h1>
     </ion-header-bar>
 
     <ion-content>
@@ -35,7 +33,7 @@
 
   <ion-side-menu  side="left">
     <ion-header-bar class="bar-dark">
-      <a class="button button-clear button-stable" href="#">Войти</a>
+      <a class="button button-clear button-stable ion-android-person" href="#/poisk"> Войти</a>
       <a class="button icon ion-gear-a" href="#"></a>
     </ion-header-bar>
     <ion-content ng-controller="displayElemCtrl">

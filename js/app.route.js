@@ -2,10 +2,10 @@
 
     angular.module('ionicApp').config(function($routeProvider){
 
-        $routeProvider.when('/obyavlenie', {
-            templateUrl: 'src/car.html',
+        $routeProvider.when('/poisk', {
+            templateUrl: 'src/poisk.html',
             controller : 'carsCtrl'
         });
-        $routeProvider.otherwise({redirectTo : '/obyavlenie'});
+        $routeProvider.otherwise({redirectTo : '/poisk'});
     });
 })();
