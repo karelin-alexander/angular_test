@@ -25,7 +25,11 @@ img{
   margin-bottom: 10px;
 }
 
-.item{
+#item_list{
+   margin: -17px;
+}
+
+#item_menu{
   margin: -17px;
 }
 
@@ -39,7 +43,6 @@ img{
 
 .list{
   overflow:  hidden;
-  padding: 2px;
 }
 
 #left_menu{
@@ -50,4 +53,8 @@ img{
 
 .menu_shadow{
   box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+
+#search_div{
+  padding-top: 20px;
 }

@@ -1,11 +1,18 @@
-( function (){
+  angular.module('ionicApp').config(function($stateProvider, $urlRouterProvider){
 
-    angular.module('ionicApp').config(function($routeProvider){
+    $stateProvider
+      .state('main', {
+        url: "/main",
+        templateUrl: 'src/main.html'
+      })
+      .state('poisk', {
+        url: "/poisk",
+        templateUrl: 'src/poisk.html'
+      })
+      .state('login', {
+        url: "/login",
+        templateUrl: 'src/login.html'
+      })
 
-        $routeProvider.when('/poisk', {
-            templateUrl: 'src/poisk.html',
-            controller : 'carsCtrl'
-        });
-        $routeProvider.otherwise({redirectTo : '/poisk'});
-    });
-})();
+    $urlRouterProvider.otherwise('/main');
+  });
