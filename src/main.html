@@ -13,7 +13,7 @@
       <ion-list ng-controller="carsCtrl as cars" class="headBody">
         <div class="list">
           <ion-item ng-repeat="car in carsData">
-            <a class="item" href="#">
+            <a id="item_list" class="item" href="#">
               <img ng-src="{{ car.img }}" class="col-40 img-responsive" align="left" hspace="10px">
               <h2 class="items_car">{{ car.name + " " + car.model }} </h2>
               <h3 class="year">{{ car.year }}</h3>
@@ -33,12 +33,12 @@
 
   <ion-side-menu  side="left">
     <ion-header-bar class="bar-dark">
-      <a class="button button-clear button-stable ion-android-person" href="#/poisk"> Войти</a>
-      <a class="button icon ion-gear-a" href="#"></a>
+      <a class="button button-clear button-stable ion-android-person" href="#/login" menu-close> Войти</a>
+      <a class="button icon ion-gear-a" href="#/setting" menu-close></a>
     </ion-header-bar>
     <ion-content ng-controller="displayElemCtrl">
       <ul class="list" id="left_menu" ng-repeat="tag in tagsHeader">
-        <a href="{{tag.tagLink}}" class="{{tag.item}}" menu-close> {{tag.tagName}}</a>
+        <a id="item_menu" href="{{tag.tagLink}}" class="{{tag.item}}" menu-close> {{tag.tagName}}</a>
       </ul>
     </ion-content>
   </ion-side-menu>

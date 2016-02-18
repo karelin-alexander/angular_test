@@ -13,6 +13,10 @@
         url: "/login",
         templateUrl: 'src/login.html'
       })
+      .state('setting', {
+        url: "/setting",
+        templateUrl: 'src/setting.html'
+      });
 
     $urlRouterProvider.otherwise('/main');
   });
