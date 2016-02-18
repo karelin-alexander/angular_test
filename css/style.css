@@ -25,7 +25,11 @@ img{
   margin-bottom: 10px;
 }
 
-.item{
+.item_list{
+   margin: -17px;
+}
+
+.item_menu{
   margin: -17px;
 }
 
@@ -33,7 +37,7 @@ img{
   color: #d43f3a;
 }
 
-h1.title{
+.title{
   text-align: center;
 }
 
@@ -41,8 +45,16 @@ h1.title{
   overflow:  hidden;
 }
 
-#left_menu{
+ul.list{
   margin: 0px;
   padding: 15px;
   border: 1px solid #f3f3fa;
+}
+
+.menu_shadow{
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+
+.log_in{
+  padding-top: 25px;
 }

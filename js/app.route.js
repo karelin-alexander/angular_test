@@ -1,11 +1,24 @@
-( function (){
+  angular.module('ionicApp').config(function($stateProvider, $urlRouterProvider){
 
-    angular.module('ionicApp').config(function($routeProvider){
+    $stateProvider.state('main', {
+        url: "/main",
+        templateUrl: 'src/main.html'
+      });
 
-        $routeProvider.when('/obyavlenie', {
-            templateUrl: 'src/car.html',
-            controller : 'carsCtrl'
-        });
-        $routeProvider.otherwise({redirectTo : '/obyavlenie'});
-    });
-})();
+    $stateProvider.state('poisk', {
+        url: "/poisk",
+        templateUrl: 'src/search.html'
+      });
+
+    $stateProvider.state('login', {
+        url: "/login",
+        templateUrl: 'src/login.html'
+      });
+
+    $stateProvider.state('setting', {
+        url: "/setting",
+        templateUrl: 'src/setting.html'
+      });
+
+    $urlRouterProvider.otherwise('/main');
+  });

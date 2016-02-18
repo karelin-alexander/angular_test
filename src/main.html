@@ -1,32 +1,32 @@
 <ion-side-menus>
 
-  <ion-side-menu-content style="box-shadow: 0 0 30px rgba(0,0,0,0.7);">
+  <ion-side-menu-content class="menu_shadow">
     <ion-header-bar class="bar-positive">
       <div class="buttons">
         <button class="button button-icon icon ion-navicon left"
-                ng-click="toogleleft()"></button>
+                ng-click="ToogleLeft()"></button>
       </div>
-      <div style="text-align: center;">
-        <h1 class="title">Мои объявления</h1>
-      </div>
+      <h1 class="title">Мои объявления</h1>
     </ion-header-bar>
 
     <ion-content>
       <ion-list ng-controller="carsCtrl as cars" class="headBody">
         <div class="list">
           <ion-item ng-repeat="car in carsData">
-            <a class="item" href="#">
-              <img ng-src="{{ car.img }}" class="col-40 img-responsive" align="left" hspace="10px">
-              <h2 class="items_car">{{ car.name + " " + car.model }} </h2>
-              <h3 class="year">{{ car.year }}</h3>
-              <h4 class="info">{{'Пробег ' + car.mileage + 'км, '
-                + 'Объём двигателя ' + car.amount + 'см.куб, '
-                + car.fuel + ', '
-                + car.type + ', '
-                + car.transmission + '.' }}
-              </h4>
-              <h3 class="cost">{{ car.cost }}</h3>
-            </a>
+            <div class="item_list">
+              <a class="item" href="#">
+                <img ng-src="{{ car.img }}" class="col-40 img-responsive" align="left" hspace="10px">
+                <h2 class="items_car">{{ car.name + " " + car.model }} </h2>
+                <h3 class="year">{{ car.year }}</h3>
+                <h4 class="info">{{'Пробег ' + car.mileage + 'км, '
+                        + 'Объём двигателя ' + car.amount + 'см.куб, '
+                                             + car.fuel + ', '
+                                             + car.type + ', '
+                                             + car.transmission + '.' }}
+                </h4>
+                <h3 class="cost">{{ car.cost }}</h3>
+              </a>
+            </div>
           </ion-item>
         </div>
       </ion-list>
@@ -35,12 +35,14 @@
 
   <ion-side-menu  side="left">
     <ion-header-bar class="bar-dark">
-      <a class="button button-clear button-stable" href="#">Войти</a>
-      <a class="button icon ion-gear-a" href="#"></a>
+      <a class="button button-clear button-stable ion-android-person" href="#/login" menu-close> Войти</a>
+      <a class="button icon ion-gear-a" href="#/setting" menu-close></a>
     </ion-header-bar>
     <ion-content ng-controller="displayElemCtrl">
-      <ul class="list" id="left_menu" ng-repeat="tag in tagsHeader">
-        <a href="{{tag.tagLink}}" class="{{tag.item}}" menu-close> {{tag.tagName}}</a>
+      <ul class="list" ng-repeat="tag in tagsHeader">
+          <div class="item_menu">
+            <a href="{{tag.tagLink}}" class="{{tag.item}}" menu-close> {{tag.tagName}}</a>
+          </div>
       </ul>
     </ion-content>
   </ion-side-menu>
