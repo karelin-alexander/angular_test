@@ -1,19 +1,21 @@
   angular.module('ionicApp').config(function($stateProvider, $urlRouterProvider){
 
-    $stateProvider
-      .state('main', {
+    $stateProvider.state('main', {
         url: "/main",
         templateUrl: 'src/main.html'
-      })
-      .state('poisk', {
+      });
+
+    $stateProvider.state('poisk', {
         url: "/poisk",
-        templateUrl: 'src/poisk.html'
-      })
-      .state('login', {
+        templateUrl: 'src/search.html'
+      });
+
+    $stateProvider.state('login', {
         url: "/login",
         templateUrl: 'src/login.html'
-      })
-      .state('setting', {
+      });
+
+    $stateProvider.state('setting', {
         url: "/setting",
         templateUrl: 'src/setting.html'
       });
