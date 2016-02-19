@@ -18,7 +18,7 @@ app.controller('MainCtrl', function($scope, $ionicSideMenuDelegate){
   $scope.clientSideList = [
     { text: "$ USD", value: "usd" },
     { text: "€ EUR", value: "eur" },
-    { text: "₽ RUB", value: "rub" },
+    { text: "P RUB", value: "rub" },
     { text: "б.р BLR", value: "blr" }
   ];
   $scope.data = {
