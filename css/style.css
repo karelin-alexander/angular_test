@@ -29,6 +29,12 @@ img{
    margin: -17px;
 }
 
+content_list.item{
+  margin: -10px;
+  padding-top: 8px;
+  padding-bottom: 0px;
+}
+
 .item_menu{
   margin: -17px;
 }

@@ -14,8 +14,8 @@
         <div class="list">
           <ion-item ng-repeat="car in carsData">
             <div class="item_list">
-              <a class="item" href="#">
-                <img ng-src="{{ car.img }}" class="col-40 img-responsive" align="left" hspace="10px">
+              <content_list class="item" href="#">
+                <img ng-src="{{ car.img }}" class="col-40 img-responsive" align="left">
                 <h2 class="items_car">{{ car.name + " " + car.model }} </h2>
                 <h3 class="year">{{ car.year }}</h3>
                 <h4 class="info">{{'Пробег ' + car.mileage + 'км, '
@@ -25,7 +25,8 @@
                                              + car.transmission + '.' }}
                 </h4>
                 <h3 class="cost">{{ car.cost }}</h3>
-              </a>
+                <p>{{ toggleModel.value1 }}</p>
+              </content_list>
             </div>
           </ion-item>
         </div>
@@ -33,7 +34,7 @@
     </ion-content>
   </ion-side-menu-content>
 
-  <ion-side-menu  side="left">
+  <ion-side-menu side="left">
     <ion-header-bar class="bar-dark">
       <a class="button button-clear button-stable ion-android-person" href="#/login" menu-close> Войти</a>
       <a class="button icon ion-gear-a" href="#/setting" menu-close></a>
