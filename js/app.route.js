@@ -25,8 +25,8 @@
       templateUrl: 'templates/sale.html'
     });
 
-    $stateProvider.state('poisk', {
-      url: "/poisk",
+    $stateProvider.state('search', {
+      url: "/search",
       templateUrl: 'templates/search.html'
     });
 
