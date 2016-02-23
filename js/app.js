@@ -5,23 +5,21 @@ app.controller('MainCtrl', function($scope, $ionicSideMenuDelegate){
     $ionicSideMenuDelegate.ToggleLeft();
   };
 
-  $scope.goBack = function() {
-    $ionicHistory.goBack();
-  };
-
   $scope.toggleModel = {
     data_auto : true,
-    save_pass : false,
+    save_pass : true,
     view_pass : false
   };
 
   $scope.clientSideList = [
-    { text: "$ USD", value: "usd" },
-    { text: "€ EUR", value: "eur" },
-    { text: "P RUB", value: "rub" },
-    { text: "б.р BLR", value: "blr" }
+    { text: "$ USD", value: "1" },
+    { text: "€ EUR", value: "24012" },
+    { text: "P RUB", value: "283" },
+    { text: "б.р BLR", value: "21644" }
   ];
+
   $scope.data = {
-    clientSide: 'usd'
+    clientSide: '1'
   };
+
 });

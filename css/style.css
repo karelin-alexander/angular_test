@@ -18,6 +18,7 @@ p{
   line-height: 1.0em;
   font-size: 14px;
   color: #1F5FBF;
+
 }
 
 img{
@@ -63,4 +64,8 @@ ul.list{
 
 .log_in{
   padding-top: 25px;
+}
+
+select{
+  font-weight: bold;
 }
