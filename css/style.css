@@ -18,10 +18,7 @@ p{
   line-height: 1.0em;
   font-size: 14px;
   color: #1F5FBF;
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/ionic_step2
 }
 
 img{
@@ -33,15 +30,12 @@ img{
    margin: -17px;
 }
 
-<<<<<<< HEAD
-=======
 content_list.item{
   margin: -10px;
   padding-top: 8px;
   padding-bottom: 0px;
 }
 
->>>>>>> refs/remotes/origin/ionic_step2
 .item_menu{
   margin: -17px;
 }
@@ -71,10 +65,7 @@ ul.list{
 .log_in{
   padding-top: 25px;
 }
-<<<<<<< HEAD
-=======
 
 select{
   font-weight: bold;
 }
->>>>>>> refs/remotes/origin/ionic_step2

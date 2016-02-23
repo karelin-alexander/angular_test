@@ -1,12 +1,6 @@
-var app = angular.module('ionicApp', ['ionic','cars.app','ngRoute'])
+﻿var app = angular.module('ionicApp', ['ionic','cars.app','ngRoute'])
 
 app.controller('MainCtrl', function($scope, $ionicSideMenuDelegate){
-<<<<<<< HEAD
-  $scope.toggleLeft = function() {
-    $ionicSideMenuDelegate.toggleLeft();
-  };
-})
-=======
   $scope.ToggleLeft = function() {
     $ionicSideMenuDelegate.ToggleLeft();
   };
@@ -29,4 +23,3 @@ app.controller('MainCtrl', function($scope, $ionicSideMenuDelegate){
   };
 
 });
->>>>>>> refs/remotes/origin/ionic_step2
