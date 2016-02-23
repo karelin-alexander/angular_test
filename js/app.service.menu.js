@@ -1,4 +1,4 @@
-﻿(function(){
+(function(){
 
   angular.module('ionicApp').service('TagMenu', function(){
 
