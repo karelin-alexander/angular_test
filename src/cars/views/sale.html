@@ -1,12 +1,11 @@
 <ion-view>
-  <ion-header-bar class="bar-positive">
+  <ion-header-bar ng-class="'bar-' + color_data.color">
     <div class="buttons">
       <button class="button button-icon icon ion-ios-arrow-back" ui-sref="main"> Назад</button>
     </div>
-    <h1 class="title">Покупка</h1>
+    <h1 class="title">Продажа</h1>
   </ion-header-bar>
   <ion-content>
-
     <label class="item item-input item-select">
       <div class="input-label">
         Марка автомобиля
@@ -22,11 +21,11 @@
       <div class="input-label">
         Модель
       </div>
-        <select>
-          <option selected></option>
-          <option>1</option>
-          <option>2</option>
-        </select>
+      <select>
+        <option selected></option>
+        <option>1</option>
+        <option>2</option>
+      </select>
     </label>
 
     <label class="item item-input item-select">
@@ -51,7 +50,7 @@
       </select>
     </label>
 
-    <button class="button button-block button-stable" ui-sref="submit">Показать</button>
+    <button class="button button-block button-stable" ui-sref="submit">Узнать среднюю цену</button>
 
   </ion-content>
 </ion-view>

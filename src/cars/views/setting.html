@@ -1,5 +1,5 @@
 <ion-view>
-  <ion-header-bar class="bar-positive">
+  <ion-header-bar ng-class="'bar-' + color_data.color">
     <div class="buttons">
       <button class="button button-icon icon ion-ios-arrow-back" ui-sref="main"> Назад</button>
     </div>
@@ -24,5 +24,16 @@
       </ion-radio>
 
     </setting_ul>
+    <div class=" item item-divider">Цвет интерфейса</div>
+    <div class="row">
+      <ion-radio class="col-25"
+                 ng-repeat="item in colorSideList"
+                 ng-value="item.value"
+                 ng-model="color_data.color"
+                 name="color-side">
+        {{ item.text }}
+      </ion-radio>
+
+    </div>
   </ion-content>
 </ion-view>

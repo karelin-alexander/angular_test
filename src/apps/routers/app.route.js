@@ -1,34 +1,38 @@
-  angular.module('ionicApp').config(function($stateProvider, $urlRouterProvider){
+(function (angular) {
+  'use strict';
+
+  angular.module('ionicApp').config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('login', {
       url: "/login",
-      templateUrl: 'templates/login.html'
+      templateUrl: 'src/cars/views/login.html'
     });
 
     $stateProvider.state('setting', {
       url: "/setting",
-      templateUrl: 'templates/setting.html'
+      templateUrl: 'src/cars/views/setting.html'
     });
 
     $stateProvider.state('main', {
       url: "/main",
-      templateUrl: 'templates/main.html'
+      templateUrl: 'src/cars/views/main.html'
     });
 
     $stateProvider.state('buy', {
       url: "/buy",
-      templateUrl: 'templates/buy.html'
+      templateUrl: 'src/cars/views/buy.html'
     });
 
     $stateProvider.state('sale', {
       url: "/sale",
-      templateUrl: 'templates/sale.html'
+      templateUrl: 'src/cars/views/sale.html'
     });
 
     $stateProvider.state('search', {
       url: "/search",
-      templateUrl: 'templates/search.html'
+      templateUrl: 'src/cars/views/search.html'
     });
 
     $urlRouterProvider.otherwise('/main');
   });
+})(window.angular);

@@ -1,7 +1,7 @@
 <ion-side-menus>
 
   <ion-side-menu-content class="menu_shadow">
-    <ion-header-bar class="bar-positive">
+    <ion-header-bar ng-class="'bar-' + color_data.color">
       <div class="buttons">
         <button class="button button-icon icon ion-navicon left"
                 ng-click="ToogleLeft()"></button>
@@ -19,12 +19,13 @@
                 <h2 class="items_car">{{ car.name + " " + car.model }} </h2>
                 <h3 class="year">{{ car.year + " г." }}</h3>
                 <h4 class="info">{{'Пробег ' + car.mileage + 'км, '
-                        + 'Объём двигателя ' + car.amount + 'см.куб, '
-                                             + car.fuel + ', '
-                                             + car.type + ', '
-                                             + car.transmission + '.' }}
+                  + 'Объём двигателя ' + car.amount + 'см.куб, '
+                  + car.fuel + ', '
+                  + car.type + ', '
+                  + car.transmission + '.' }}
                 </h4>
-                <h3 class="cost">{{ car.cost }}</h3>
+                <h3 class="cost">{{ car.cost * data.clientSide | currency:"":0 }}</h3>
+                <p>{{data.symbolSide}}</p>
                 <p>{{ toggleModel.value1 }}</p>
               </content_list>
             </div>
@@ -41,9 +42,9 @@
     </ion-header-bar>
     <ion-content ng-controller="displayElemCtrl">
       <ul class="list" ng-repeat="tag in tagsHeader">
-          <div class="item_menu">
-            <a href="{{tag.tagLink}}" class="{{tag.item}}" menu-close> {{tag.tagName}}</a>
-          </div>
+        <div class="item_menu">
+          <a href="{{tag.tagLink}}" class="{{tag.item}}" menu-close> {{tag.tagName}}</a>
+        </div>
       </ul>
     </ion-content>
   </ion-side-menu>
