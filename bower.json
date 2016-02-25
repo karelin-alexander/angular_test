@@ -1,9 +1,6 @@
 {
   "name": "HelloIonic",
   "private": true,
-  "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.2.4"
-  },
   "description": "",
   "main": "",
   "moduleType": [],
@@ -12,8 +9,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "www/lib",
+    "www/bower_components",
     "test",
     "tests"
   ],

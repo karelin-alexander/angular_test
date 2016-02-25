@@ -23,8 +23,8 @@
 
     $scope.colorSideList = [
       {text: "Red", value: "assertive"},
-      {text: "Blue", value: "positive"},
-      {text: "Green", value: "balanced"},
+      {text: "Blue ", value: "positive"},
+      {text: "Gren ", value: "balanced"},
       {text: "Dark", value: "dark"}
     ];
 
@@ -35,6 +35,5 @@
     $scope.color_data = {
       color: 'positive'
     };
-
   });
 })(window.angular);
