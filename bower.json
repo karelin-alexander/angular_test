@@ -1,0 +1,24 @@
+{
+  "name": "HelloIonic",
+  "private": true,
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "www/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.0",
+    "ionic": "^1.2.4",
+    "angular-route": "^1.5.0",
+    "angular-resource": "^1.5.0"
+  }
+}
