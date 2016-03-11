@@ -1,19 +1,9 @@
-var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var db = require('./db');
+var a = require('./route/route');
+var b = require('./mongo/ConnectDB');
 
-var app = express();
+var port = 3000;
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
-module.exports = app;
+a.app.use(a.router);
+a.app.listen(port, function () {
+  console.log('Сервер запущен - 127.0.0.1:' + port);
+});
